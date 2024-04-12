@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*splash*/
+.ix {
+  grid-column: 1/-1;
+  grid-row: 1/1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  max-width: 100%;
+}
+
+.navdiv .open-slide {
+  display: block;
+}
+
+.navdiv ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav a {
+  font-size: 1.2rem; 
+}
+
+.mfooter, .atfooter, .refooter, .uefooter, .msfooter, .eefooter, .ctfooter , .drfooter{
+  font-size: 1rem;
+}
+
+.profile__card,
+.detail__card {
+  width: 100%;
+  max-width: 400px;
+  max-height: 100%; 
+}
+
+
+@media (max-width: 1366px) {
+  .grid {
+    max-width: 100%;
+  }
+
+  .gallery_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navdiv .open-slide {
+    display: block;
+  }
+
+  .navdiv ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-nav a {
+    font-size: 1.2rem;
+  }
+
+  .m2 .video-container,
+  .about {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #FF0000, #FFA500);
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .re_icon {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .m1_info, .at1_info, .at2_info, .at3_info, .at4_info, .retext {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav_list a {
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+
+  .mfooter, .atfooter,
+  .m2 h1, .at1_title, .at2_title, .at3_title, .at4_title, .retitle, .content-title, .gallery-title, .drfooter {
+    font-size: 2rem;
+  }
+
+  .text,
+  .text1, .retext {
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .content-subtitle {
+    font-size: 1rem;
+    font-weight: 550;
+  }
+  .m1_info h1 {
+    font-size: 4rem;
+  }
+
+  .mfooter, .atfooter, .refooter, .uefooter, .msfooter, .eefooter, .ctfooter , .drfooter{
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .side-nav a {
+    font-size: 1rem;
+  }
+
+  .gallery_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .minigallery_grid img {
+    width: 35%;
+  }
+
+  .mfooter, .atfooter, .refooter, .uefooter, .gallery-title, .content-title, .msfooter, .eefooter, .ctfooter, .drfooter {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .side-nav a {
+    font-size: 1rem;
+  }
+  .gallery_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .minigallery_grid img {
+    width: 50%;
+  }
+
+  .mfooter, .atfooter, .refooter, .uefooter,.msfooter, .eefooter, .ctfooter, .drfooter {
+    font-size: 0.8rem;
+  }
+
+  .gallery-title {
+    font-size: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .side-nav a {
+    font-size: 1.2rem;
+  }
+
+  .gallery_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .minigallery_grid img {
+    width: 50%;
+  }
+  .mfooter, .atfooter, .refooter, .uefooter, .msfooter, .eefooter, .ctfooter, .drfooter {
+    font-size: 0.7rem;
+  }
+
+  .gallery-title {
+    font-size: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .side-nav a {
+    font-size: 1rem;
+  }
+
+  .gallery_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mfooter, .atfooter, .refooter, .uefooter, .msfooter, .eefooter, .ctfooter {
+    font-size: 0.6rem;
+  }
+
+  .gallery-title {
+    font-size: 1rem;
+  }
+
+  .content-title {
+    font-size: 1rem;
+  }
+}
+
+
+/*main*/
+nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+}
+
+.m1 {
+  grid-column: 1 / -1;
+  grid-row: 2 / 2;
+}
+
+.m2 {
+  grid-column: 1 / -1;
+  grid-row: 3 / 3;
+}
+
+.mfooter {
+  grid-column: 1 / -1;
+  grid-row: 4 / 4;
+}
+
+/*about*/
+.at1 {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 3;
+}
+
+.at2 {
+  grid-column: 1 / span 12;
+  grid-row: 5 / span 3;
+}
+
+.at3 {
+  grid-column: 1 / span 6;
+  grid-row: 8 / span 2;
+}
+
+.at4 {
+  grid-column: 7 / span 6;
+  grid-row: 8 / span 2;
+}
+
+.at5 {
+  grid-column: 1 / span 6;
+  grid-row: 10 / span 2;
+}
+
+.at6 {
+  grid-column: 7 / span 6;
+  grid-row: 10 / span 2;
+}
+
+.at7 {
+  grid-column: 1 / -1; 
+  grid-row: 12 / span 3; 
+}
+
+.at8 {
+  grid-column: 1 / -1; 
+  grid-row: 15 / span 3; 
+}
+
+.atfooter {
+  grid-column: 1 / -1;
+  grid-row: 18 / 19;
+}
+
+/*role*/
+.re1 {
+  grid-column: 1 / span 6; 
+  grid-row: 3 / span 1; 
+}
+
+.re2 {
+  grid-column: 7 / span 6; 
+  grid-row: 3 / span 1; 
+}
+
+.re3 {
+  grid-column: 1 / span 6; 
+  grid-row: 4 / span 1;
+}
+
+.re4 {
+  grid-column: 7 / span 6; 
+  grid-row: 4 / span 1; 
+}
+.refooter {
+  grid-column: 1/-1;
+  grid-row: 6 / span 1;
+
+}
+
+/*update*/
+.ue1{
+  grid-column: 1 / -1; 
+  grid-row: 2 / 2; 
+}
+
+.ue2{
+  grid-column: 1 / -1; 
+  grid-row: 3 / 3; 
+}
+
+.ue3{
+  grid-column: 1 / -1; 
+  grid-row: 4 / 4; 
+}
+
+.ue4{
+  grid-column: 1 / -1; 
+  grid-row: 5 / 5; 
+}
+
+.ue5{
+  grid-column: 1 / -1; 
+  grid-row: 6 / 6; 
+}
+
+.uefooter {
+  grid-column: 1 / -1;
+  grid-row: 7 / 7;
+}
+
+/*member*/
+.ms1 {
+  grid-column: 1 / -1;
+  grid-row: 2/2;
+}
+
+.ms2 {
+  grid-column: 1 / -1;
+  grid-row: 3/3;
+}
+
+.ms3 {
+  grid-column: 1 / -1;
+  grid-row: 4/4;
+}
+
+.msfooter {
+  grid-column: 1 / -1;
+  grid-row: 5/5;
+}
+
+/*event*/
+.ee1, .ee2, .ee3 {
+  grid-column: 1/-1;
+  margin-left: 17.5vw;
+}
+
+.ee1{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+}
+
+.ee2{
+  grid-column: 1/-1;
+  grid-row: 3/3;
+}
+
+.ee3{
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  padding-bottom: 2rem;
+}
+
+.eefooter{
+  grid-column: 1/-1;
+  grid-row: 5/5;
+}
+
+/*contact*/
+.ct1{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+}
+
+.ct2{
+  grid-column: 1/-1;
+  grid-row: 3/3;
+}
+
+.ct3{
+  grid-column: 1/-1;
+  grid-row: 4/4;
+  padding-bottom: 2.5rem;
+}
+
+.ctfooter{
+  grid-column: 1/-1;
+  grid-row: 5/5;
+}
+
+/*developer*/
+.dr-title {
+  grid-column: 1 / -1; 
+  grid-row: 2/2;
+}
+.dr1{
+  grid-column: 1 / span 6; 
+  grid-row: 3/4;
+}
+
+.dr2{
+  grid-column: 7 / span 6; 
+  grid-row: 3/4;
+}
+
+.drfooter {
+    grid-column: 1 / -1; 
+    grid-row: 4/4;
+  }

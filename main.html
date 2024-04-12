@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" type="x-icon" href="images/ASG Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+</head>
+<body>
+<div class="grid">
+    <nav>
+        <div class="navdiv">
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu(event)">&times;</a>
+                <ul>
+                    <li class="nav_list"><a href="main.html" target="_self">Home</a></li>
+                    <li class="nav_list"><a href="about.html" target="_self">About</a></li>
+                    <li class="nav_list"><a href="role.html" target="_self">Role</a></li>
+                    <li class="nav_list"><a href="update.html" target="_self">Updates</a></li>
+                    <li class="nav_list"><a href="member.html" target="_self">Members</a></li>
+                    <li class="nav_list"><a href="event.html" target="_self">Events</a></li>
+                    <li class="nav_list"><a href="contact.html" target="_self">Contact</a></li>
+                    <li class="nav_list"><a href="developer.html" target="_self">Developers</a></li>
+                </ul>
+            </div>
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu(event)">
+                    <svg width="30" height="30" id="burger">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>   
+            <div class="logo-container">
+                <img class="logo_img" src="images/ASG Logo.png">
+                <h1 class="logo_name">Augustinian Student Government</h1>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="m1">
+        <div class="m1_container">
+            <div class="m1_info">
+              <h1>Overview</h1>
+              <p class="text">
+                The Augustinian Student Government (ASG) leads Colegio San Agustin – Biñan's Senior High School, advocating for students and fostering leadership since 2016. They value leadership, service and transparency, running events like Project Kislap to raise funds and create a strong school community.
+              </p>
+            </div>
+          </div>
+    </div>
+
+    <div class="m2">
+        <br>
+        <h1 style="  margin-bottom: 1rem; ">ASG Student Council Welcomes You to the New School Year!</h1>
+        <p class="text1">
+            Augustinians, are you ready? The new academic year is about to begin! For our new students, welcome to our family! 
+            <br>
+            And for our seniors, welcome back to the SHS Family! May we have a smooth and successful year!
+        </p>
+        <br>
+        <div class="video-container">
+            <video class="vid" controls autoplay loop muted>
+                <source src="videos/welcome.mp4" type="video/mp4"> 
+            </video>
+        </div>
+        <br>
+    </div>
+    
+    <div class="mfooter">&copy; 2024 Colegio San Agustin-Biñan | Augustinian Student Government (ASG)</div>
+</div>
+</body>
+</html>
